@@ -1,13 +1,13 @@
-servers:
-- url: https://academy.valentinog.com
-paths:
-  /api/link/:
-	  - title: test
-		  url: test
-	  - title: test2
-		  url: test2
-  /api/200:
+paths: 
+  /api/200: 
     success: true
-  /api/404:
-    404:
+  /api/404: 
+    404: 
       success: false
+  /api/link/: 
+    - title: test
+      url: test
+    - title: test2
+      url: test2
+servers: 
+  - url: "https://academy.valentinog.com"

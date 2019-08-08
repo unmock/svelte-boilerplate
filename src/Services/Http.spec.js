@@ -2,10 +2,6 @@ import { Http } from './Http';
 import unmock from 'unmock-node';
 
 describe('Http request tests', () => {
-    beforeEach(() => {
-        unmock.off();
-        unmock.on();
-    })
     test('200 test', async () => {
         const result = await Http.Request('GET', '/200');
         expect(result.success).toEqual(true);
